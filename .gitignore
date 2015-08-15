@@ -1,2 +1,11 @@
-/gen
-/bin
+autcommit-apk.cmd
+.settings/
+# Build
+build/
+# Local configuration file (sdk path, etc)
+local.properties
+# AndroidStudio files
+.idea
+*.iml
+# Gradle files
+.gradle

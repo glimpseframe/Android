@@ -1,5 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <color name="black_overlay">#66000000</color>
+    <color name="background_shade">#3000</color>
+    <color name="background_action_bar">#000000</color>
+    <color name="divider">#6fff</color>
+    <color name="text">#fff</color>
+    <color name="holo_blue">#FF33E5B5</color>
 
 </resources>

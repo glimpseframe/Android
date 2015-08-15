@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odesk.johnlife.glimpse.ui.BlurLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_shade"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:divider="@drawable/layout_divider"
+            android:dividerPadding="@dimen/xsmall_padding"
+            android:showDividers="middle" >
+
+            <TextView
+                android:id="@+id/action_delete"
+                style="@style/CustomActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@android:drawable/ic_menu_delete"
+                android:text="@string/delete" />
+
+            <TextView
+                android:id="@+id/action_freeze"
+                style="@style/CustomActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@android:drawable/ic_media_pause"
+                android:text="@string/pause" />
+
+            <TextView
+                android:id="@+id/action_gallery"
+                style="@style/CustomActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@android:drawable/ic_menu_gallery"
+                android:text="@string/gallery" />
+
+            <TextView
+                android:id="@+id/action_setting"
+                style="@style/CustomActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@android:drawable/ic_menu_preferences"
+                android:text="@string/settings" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+</odesk.johnlife.glimpse.ui.BlurLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_action_button_padding">4dp</dimen>
+    <dimen name="custom_action_button_drawable_padding">8dp</dimen>
+    <dimen name="custom_action_button_text_size">32sp</dimen>
+    <dimen name="dialog_width">500dp</dimen>
+</resources>

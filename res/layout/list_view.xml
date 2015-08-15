@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_shade"
+    android:divider="@drawable/layout_divider"
+    android:orientation="vertical"
+    android:padding="@dimen/small_padding"
+    android:showDividers="middle">
+
+    <TextView
+        android:id="@+id/title_list"
+        style="@style/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_wifi_list" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/list_divider" />
+</LinearLayout>

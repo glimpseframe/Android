@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odesk.johnlife.glimpse.ui.BlurLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_popup_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/layout_divider"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:background="@color/background_shade" >
+<!--
+        <TextView
+            android:id="@+id/change_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="?android:attr/listPreferredItemHeightLarge"
+            android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+            android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+            android:text="Change email"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+-->
+        <TextView
+            android:id="@+id/reset_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="?android:attr/listPreferredItemHeightLarge"
+            android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+            android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+            android:text="@string/reset_wifi"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+        <TextView
+            android:id="@+id/how_it_works"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="?android:attr/listPreferredItemHeightLarge"
+            android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+            android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+            android:text="@string/how_it_works"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+    </LinearLayout>
+
+</odesk.johnlife.glimpse.ui.BlurLayout>
