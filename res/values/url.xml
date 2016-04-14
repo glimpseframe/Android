@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- PATH TO FILE:  /mnt/sdcard/userdata.txt -->
-    <!-- file must contain email address (examples: admin@glimpseframe.com, devtestt@mail.ru) -->
-    <string name="data_file">userdata.txt</string>
-
-</resources>

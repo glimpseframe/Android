@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="odesk.johnlife.glimpse"
-    android:versionCode="10"
-    android:versionName="3.1" >
+    package="odesk.johnlife.skylight">
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -16,15 +14,16 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name="odesk.johnlife.glimpse.app.GlimpseApp"
+        android:name=".app.SkylightApp"
         android:allowBackup="true"
         android:label="@string/app_name"
         android:icon="@drawable/ic_launcher"
         android:largeHeap="true"
         android:theme="@style/AppTheme.WithActionBar" >
         <activity
-            android:name="odesk.johnlife.glimpse.activity.PhotoActivity"
+            android:name=".activity.PhotoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize"
             android:theme="@style/AppTheme.WithActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,10 +33,7 @@
                 </intent-filter>
         </activity>
 
-
-    
-
-    <meta-data android:name="com.crashlytics.ApiKey" android:value="711e239e09b0533368e9a008ee11dc6f043216fb"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="711e239e09b0533368e9a008ee11dc6f043216fb"/>
     </application>
 
 </manifest>

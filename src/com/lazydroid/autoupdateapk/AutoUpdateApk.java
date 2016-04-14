@@ -15,32 +15,6 @@
 
 package com.lazydroid.autoupdateapk;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.security.MessageDigest;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.HashSet;
-import java.util.Observable;
-import java.util.Set;
-import java.util.zip.CRC32;
-import java.util.zip.Checksum;
-
-import org.apache.http.HttpEntity;
-import org.apache.http.ParseException;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.params.BasicHttpParams;
-import org.apache.http.params.HttpConnectionParams;
-import org.apache.http.params.HttpParams;
-import org.apache.http.util.EntityUtils;
-
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -59,6 +33,32 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.provider.Settings.Secure;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.ParseException;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
+import org.apache.http.util.EntityUtils;
+
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.security.MessageDigest;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashSet;
+import java.util.Observable;
+import java.util.Set;
+import java.util.zip.CRC32;
+import java.util.zip.Checksum;
 
 public class AutoUpdateApk extends Observable {
 
@@ -169,7 +169,7 @@ public class AutoUpdateApk extends Observable {
 	public static final long DAYS = 24 * HOURS;
 
 	// 3-4 hours in dev.mode, 1-2 days for stable releases
-	private static long UPDATE_INTERVAL = 3 * HOURS;	// how often to check
+	private static long UPDATE_INTERVAL = 12 * HOURS;	// how often to check
 
 	private static boolean mobile_updates = false;		// download updates over wifi only
 

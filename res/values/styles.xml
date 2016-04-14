@@ -59,7 +59,12 @@
         <item name="android:textSize">@dimen/text_size</item>
         <item name="android:textColor">@color/text</item>
     </style>
-    
+    <style name="txtViewStyleSmall" parent="android:Widget.Holo.TextView">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
     <style name="btnStyle" parent="android:Widget.Holo.Button">
         <item name="android:background">?android:attr/selectableItemBackground</item>
         <item name="android:textSize">@dimen/text_size</item>

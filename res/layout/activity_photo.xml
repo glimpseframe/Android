@@ -3,9 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:keepScreenOn="true"
-    tools:context=".PhotoActivity" >
+    tools:context=".PhotoActivity">
 
-    <odesk.johnlife.glimpse.ui.FreezeViewPager
+    <odesk.johnlife.skylight.ui.FreezeViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -18,64 +18,77 @@
         android:layout_gravity="center"
         android:visibility="gone" />
 
-    <odesk.johnlife.glimpse.ui.BlurTextView
+    <Button
         android:id="@+id/see_new_photos"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/see_new_photos_height"
         android:layout_gravity="center_horizontal|bottom"
-        android:layout_marginBottom="@dimen/heart_padding"
+        android:background="@drawable/see_new_photos"
         android:visibility="gone" />
 
-    <odesk.johnlife.glimpse.ui.BlurTextView
+    <odesk.johnlife.skylight.ui.BlurTextView
         android:id="@+id/error_pane"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:visibility="gone" />
 
-    <odesk.johnlife.glimpse.ui.BlurListView
+    <odesk.johnlife.skylight.ui.BlurListView
         android:id="@+id/wifi_list"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:visibility="gone" />
 
-    <odesk.johnlife.glimpse.ui.HintTextView
-        android:id="@+id/hint"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|bottom"
-        android:layout_marginBottom="@dimen/hint_margin_bottom"
-        android:visibility="gone" />
-
-    <odesk.johnlife.glimpse.dialog.DeletingDialog
+    <odesk.johnlife.skylight.dialog.DeletingDialog
         android:id="@+id/dialog_deleting"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone" />
 
-    <odesk.johnlife.glimpse.dialog.HelpDialog
+    <odesk.johnlife.skylight.dialog.HelpDialog
         android:id="@+id/dialog_help"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone" />
 
-    <odesk.johnlife.glimpse.dialog.WifiDialog
+    <odesk.johnlife.skylight.dialog.RecognizeDialog
+        android:id="@+id/dialog_recognize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <odesk.johnlife.skylight.dialog.WifiDialog
         android:id="@+id/dialog_wifi"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone" />
 
-    <odesk.johnlife.glimpse.dialog.EmailChangeDialog
+    <odesk.johnlife.skylight.dialog.EmailChangeDialog
         android:id="@+id/dialog_change_email"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone" />
 
-    <Gallery
+    <GridView
         android:id="@+id/gallery1"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:numColumns="3"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:horizontalSpacing="16dp"
+        android:verticalSpacing="16dp"
+        android:visibility="gone" >
+    </GridView>
+
+    <odesk.johnlife.skylight.ui.HintTextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="@dimen/hint_margin_bottom"
         android:visibility="gone" />
 </FrameLayout>

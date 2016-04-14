@@ -30,12 +30,33 @@
             android:padding="@dimen/small_padding"
             android:text="@string/how_it_works_message" />
 
-        <TextView
-            android:id="@+id/app_version"
-            style="@style/txtViewStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:padding="@dimen/small_padding" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/txtViewStyleSmall"
+                android:id="@+id/mac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:padding="@dimen/small_padding" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/app_version"
+                style="@style/txtViewStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:padding="@dimen/small_padding" />
+
+        </LinearLayout>
+
     </LinearLayout>
 </ScrollView>

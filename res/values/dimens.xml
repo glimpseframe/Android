@@ -3,10 +3,10 @@
     
     <dimen name="title">36sp</dimen>
     <dimen name="text_size">24sp</dimen>
+    <dimen name="text_size_small">18sp</dimen>
     <dimen name="action">24sp</dimen>
     <dimen name="error_pane">24sp</dimen>
-    <dimen name="see_new_photos_pane">24sp</dimen>
-    <dimen name="see_new_photos_layout_hight">48sp</dimen>
+    <dimen name="see_new_photos_height">48dp</dimen>
 
     <dimen name="xsmall_padding">4dp</dimen>
     <dimen name="small_padding">8dp</dimen>
